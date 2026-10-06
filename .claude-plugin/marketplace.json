@@ -1,0 +1,32 @@
+{
+  "name": "research-orchestrator-marketplace",
+  "description": "The research-orchestrator skill plus the research plugins it routes to",
+  "owner": {
+    "name": "MazenMourad218"
+  },
+  "plugins": [
+    {
+      "name": "research-orchestrator",
+      "source": "./plugins/research-orchestrator",
+      "description": "Meta skill for any market, policy, technology, competitor or customer research. Routes to the plugins below and enforces sourcing and evidence rules."
+    },
+    {
+      "name": "market-researcher",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/agent-plugins/market-researcher",
+        "ref": "main"
+      },
+      "description": "By Anthropic: sector overviews, competitive landscapes, peer comps and ideas shortlist"
+    },
+    {
+      "name": "exa",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/exa-labs/exa-mcp-server.git"
+      },
+      "description": "By Exa: web search, content fetching and multi-step research"
+    }
+  ]
+}
