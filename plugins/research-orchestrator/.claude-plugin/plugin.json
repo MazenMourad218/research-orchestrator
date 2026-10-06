@@ -1,0 +1,9 @@
+{
+  "name": "research-orchestrator",
+  "version": "1.0.0",
+  "description": "Meta skill for any market, policy, technology, competitor or customer research. Routes to installed research skills and enforces sourcing and evidence rules.",
+  "author": {
+    "name": "MazenMourad218"
+  },
+  "repository": "https://github.com/MazenMourad218/research-orchestrator"
+}
